@@ -65,11 +65,11 @@
         </nav>
         
         <!-- banner -->
-        <div class="banner lg:mx-auto my-10 mx-5 ">
+        <div class="banner lg:mx-auto my-10 mx-5">
 
             <div class="carousel  ">
                 <div id="slide1" class="carousel-item relative w-full">
-                    <div class="hero lg:min-h-[60vh] w" style="background-image: url(images/banner1.png);">
+                    <div class="hero lg:min-h-[80vh] w" style="background-image: url(images/banner1.png);">
                         <div class="hero-overlay bg-opacity-50"></div>
                         <div class="hero-content text-center text-neutral-content">
                             <div class="max-w-md">
@@ -80,14 +80,14 @@
                         </div>
                     </div>
                 <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide3" class="btn btn-circle">❮</a> 
+                    <a href="#slide4" class="btn btn-circle">❮</a> 
                     <a href="#slide2" class="btn btn-circle">❯</a>
                 </div>
                 </div> 
 
 
                 <div id="slide2" class="carousel-item relative w-full">
-                    <div class="hero lg:min-h-[60vh]" style="background-image: url(images/banner2.png);">
+                    <div class="hero lg:min-h-[80vh]" style="background-image: url(images/banner2.png);">
                         <div class="hero-overlay bg-opacity-50"></div>
                         <div class="hero-content text-center text-neutral-content">
                             <div class="max-w-md">
@@ -105,7 +105,7 @@
 
 
                 <div id="slide3" class="carousel-item relative w-full">
-                    <div class="hero lg:min-h-[60vh]" style="background-image: url(images/banner3.png);">
+                    <div class="hero lg:min-h-[80vh]" style="background-image: url(images/banner3.png);">
                         <div class="hero-overlay bg-opacity-50"></div>
                         <div class="hero-content text-center text-neutral-content">
                             <div class="max-w-md">
@@ -117,9 +117,52 @@
                     </div>
                 <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                     <a href="#slide2" class="btn btn-circle">❮</a> 
-                    <a href="#slide1" class="btn btn-circle">❯</a>
+                    <a href="#slide4" class="btn btn-circle">❯</a>
                 </div>
                 </div>
+
+                    <div id="slide4" class="carousel-item relative w-full">
+                        <div class="hero lg:min-h-[80vh] w" style="background-image: url(images/banner4.png);">
+                            <div class="hero-overlay bg-opacity-50"></div>
+                            <div class="hero-content text-center text-neutral-content">
+                                <div class="max-w-md">
+                                    <h1 class="mb-5 text-3xl lg:text-5xl font-bold">Exotic tastes at your <br>doorstep</h1>
+                                    <p class="mb-5 text-sm lg:text-base">We supply highly quality organic products.</p>
+                                    <button class="btn bg-Primary-color">Get Started</button>
+                                </div>
+                            </div>
+                        </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide3" class="btn btn-circle">❮</a> 
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
+                    </div>
+
+            </div>
+        </div>
+
+        <!-- relative position part -->
+        <div class="relative bottom-40 max-w-screen-xl mx-auto hidden lg:flex justify-evenly shadow-2xl h-60 items-center bg-white">
+
+            <div class="flex-row">
+                <img src="./images/fruit1.png" alt="">
+                <p>Grape</p>
+            </div>
+            <div class="flex-row text-center">
+                <img src="./images/fruit2.png" alt="">
+                <p>Orange</p>
+            </div>
+            <div class="flex-row text-center">
+                <img src="./images/fruit3.png" alt="">
+                <p>Mango</p>
+            </div>
+            <div class="flex-row text-center">
+                <img src="./images/fruit4.png" alt="">
+                <p>Strawberry</p>
+            </div>
+            <div class="flex-row text-center">
+                <img src="./images/fruit5.png" alt="">
+                <p>Pomegranate</p>
             </div>
         </div>
 
@@ -128,14 +171,15 @@
     <main class="max-w-screen-2xl mx-auto">
 
         <!-- section-1 -->
-        <section class="px-5 lg:px-0 mt-20">
-            <!-- contan -->
+        <section class="px-5 lg:px-0 lg:mt-30">
+
+            <!-- contant -->
             <div class="flex flex-col md:flex-row gap-5 justify-between text-center">
 
                 <div class="contant md:text-left">
                 <h1 class="text-3xl lg:text-5xl font-bold">Deal of the day</h1>
                 <p class="text-base font-medium text-intro-color my-5">
-                    Contrary to popular belief, is not simply random text. <br>It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. 
+                    Contrary to popular belief, is not simply random text. <br>It has roots in a piece of classical Latin literature from <br>45 BC, making it over 2000 years old. 
                 </p>
                 </div>
     
@@ -191,11 +235,25 @@
                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                     </div></p>
                     <div class="card-actions">
-                    <button class="btn btn-ghost text-intro-color">Details</button>
+                        <label for="my_modal_6" class="btn">Details</label>
+                    </div>
+                    <input type="checkbox" id="my_modal_6" class="modal-toggle" />
+
+                    <div class="modal">
+                    <div class="modal-box shadow-lg border-2">
+                        <img class="" src="./images/fruit6.png" alt="">
+                        <h3 class="font-bold text-lg">Apple</h3>
+                        <p class="py-4">This modal works with a hidden checkbox!</p>
+                        <div class="modal-action items-center">
+                        <label for="my_modal_6" class="btn btn-outline btn-accent">Close</label>
+                        <label for="my_modal_6" class="btn btn-secondary">Buy now</label>
+                        </div>
+                    </div>
                     </div>
                 </div>
                 </div>
-    
+
+
                 <div class="card bg-base-100 shadow-lg border-2 my-5">
                 <div class="border-spacing-1">
                     <figure class="px-10 pt-10">
@@ -213,7 +271,20 @@
                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                     </div></p>
                     <div class="card-actions">
-                    <button class="btn btn-ghost text-intro-color">Details</button>
+                        <label for="my_modal_7" class="btn">Details</label>
+                    </div>
+                    <input type="checkbox" id="my_modal_7" class="modal-toggle" />
+                    
+                    <div class="modal">
+                    <div class="modal-box shadow-lg border-2">
+                        <img class="" src="./images/fruit7.png" alt="">
+                        <h3 class="font-bold text-lg">Orange</h3>
+                        <p class="py-4">This modal works with a hidden checkbox!</p>
+                        <div class="modal-action items-center">
+                        <label for="my_modal_7" class="btn btn-outline btn-accent">Close</label>
+                        <label for="my_modal_7" class="btn btn-secondary">Buy now</label>
+                        </div>
+                    </div>
                     </div>
                 </div>
                 </div>
@@ -235,7 +306,20 @@
                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                     </div></p>
                     <div class="card-actions">
-                    <button class="btn btn-ghost text-intro-color">Details</button>
+                        <label for="my_modal_8" class="btn">Details</label>
+                    </div>
+                    <input type="checkbox" id="my_modal_8" class="modal-toggle" />
+                    
+                    <div class="modal">
+                    <div class="modal-box shadow-lg border-2">
+                        <img class="" src="./images/fruit8.png" alt="">
+                        <h3 class="font-bold text-lg">Red Dragon</h3>
+                        <p class="py-4">This modal works with a hidden checkbox!</p>
+                        <div class="modal-action items-center">
+                        <label for="my_modal_8" class="btn btn-outline btn-accent">Close</label>
+                        <label for="my_modal_8" class="btn btn-secondary">Buy now</label>
+                        </div>
+                    </div>
                     </div>
                 </div>
                 </div>
@@ -257,20 +341,33 @@
                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                     </div></p>
                     <div class="card-actions">
-                    <button class="btn btn-ghost text-intro-color">Details</button>
+                        <label for="my_modal_9" class="btn">Details</label>
+                    </div>
+                    <input type="checkbox" id="my_modal_9" class="modal-toggle" />
+                    
+                    <div class="modal">
+                    <div class="modal-box shadow-lg border-2">
+                        <img class="" src="./images/fruit9.png" alt="">
+                        <h3 class="font-bold text-lg">Banana</h3>
+                        <p class="py-4">This modal works with a hidden checkbox!</p>
+                        <div class="modal-action items-center">
+                        <label for="my_modal_9" class="btn btn-outline btn-accent">Close</label>
+                        <label for="my_modal_9" class="btn btn-secondary">Buy now</label>
+                        </div>
+                    </div>
                     </div>
                 </div>
                 </div>
     
             </div>
 
-            <div class="text-center mt-5">
+            <div class="text-center mt-5 mb-24">
                 <button class="btn bg-Primary-color">Shop All</button>
             </div>
         </section>
 
         <!-- section-2 -->
-        <section class="mx-auto mt-10">
+        <section class="mx-auto mt-10 lg:mx-20">
 
             <div class="hero lg:min-h-[80vh]" style="background-image: url(./images/team.png);">
                 <div class="hero-overlay bg-opacity-60"></div>
@@ -281,10 +378,10 @@
                   </div>
             
                   <!-- member profile -->
-                  <div class="flex flex-col lg:flex-row gap-10 text-white">
+                  <div class="grid lg:grid-flow-col md:grid-cols-2 gap-10 text-white">
                     <div>
                       <img src="./images/member1.png" alt="">
-                      <h1 class="text-xl lg:text-2xl font-bold">Rimon Mojudmar</h1>
+                      <h1 class="text-xl lg:text-2xl font-bold">Rimon Mojumdar</h1>
                       <p>Web developer</p>
                       <div class="flex justify-center gap-2 pt-4">
                         <a href="#"><img src="./images/fb (1).png" alt=""></a>
@@ -354,6 +451,6 @@
           </div>
         </div> 
     </footer>
-
+    
 </body>
 </html> 
